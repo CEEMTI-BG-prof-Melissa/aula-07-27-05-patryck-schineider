@@ -1,19 +1,21 @@
-form :required{
+input[required]{
     border: red solid 1px;
 }
 input[type="password"]{
     background-color: lightgray;
 }
-a[href="https://exemplo.com"]{
+a[href^="https"]{
     color: green;
-    font-weight: bold;
+}
+a[href*="exemplo"]{
+    font-weight: bolder;
 }
 a[href$=".pdf"]{
     color: pink;
 }
-div[class="btn ativo destaque"]{
+div[class~="ativo"]{
     background-color: lightblue;
 }
-p[lang="pt-br"]{
+p[lang|="pt"]{
     color: green;
 }
